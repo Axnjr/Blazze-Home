@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "tw";
+  src: url("./assets/4f117ec02fc103f8-s.p.woff2");
+}
+
+@font-face {
+  font-family: "inter";
+  font-weight: 600;
+  src: url("./assets//c9a5bc6a7c948fb0-s.p.woff2");
+}
+
+body {
+  background-color: #fff; /* Light mode background color */
+  color: #333; /* Light mode text color */
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Dark mode styles */
+  body {
+    background-color: #1a202c;
+    color: #cbd5e0;
+  }
+}
+
+.heading{
+  font-family: "tw",sans-serif;
+  font-weight: 800;
+}
+
+.para{
+  font-family: "inter",sans-serif;
+}
+
+:root {
+  font-family: "tw", sans-serif;
+  font-weight: 400;
+  color-scheme: "" dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.hero-join-button-dark {
+  background: linear-gradient(var(--gradient-angle), hsla(0, 0%, 100%, .5), hsla(0, 0%, 100%, .1), #fff, hsla(0, 0%, 100%, .3)) !important;
+}
+
+.hero-join-button,
+.hero-join-button-dark {
+  animation: borderGrad 5s linear infinite reverse;
+}
+
+@keyframes borderGrad {
+  0% {
+    --gradient-angle: 360deg;
+  }
+
+  100% {
+    --gradient-angle: 0deg;
+  }
+}
