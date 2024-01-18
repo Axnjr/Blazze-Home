@@ -12,6 +12,17 @@
   background-image: url("../public/img.png");
 }
 
+::-webkit-scrollbar{
+  width: 8px;
+  height: 0px;
+  background-color: #d2d2d2;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #373737;
+  border-radius: 50px;
+}
+
 /* .moving-grid-background {
   will-change: transform;
   background-size: 2rem 2rem;
