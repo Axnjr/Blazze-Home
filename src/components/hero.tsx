@@ -2,13 +2,13 @@
 
 export default function Hero() {
     return (
-        <div className="w-full h-fit flex flex-col gap-4 items-center justify-start py-24 ">
-            <div className="bg-neutral-100 dark:bg-neutral-900 py-1 px-2 rounded-lg text-base font-medium">
-                🎉 Introducing yet another js framework, Blazze.js ✨
+        <div className="w-full h-fit flex flex-col gap-4 items-center justify-start py-20 md:py-24 ">
+            <div className="bg-neutral-100 dark:bg-neutral-900 py-1 px-2 rounded-lg text-xs sm:text-sm md:text-base font-medium">
+                🎉 Introducing yet another js framework, Blazze.js
             </div>
             <div className="relative flex w-fit mx-auto text-center ">
-                <h1 className="text-5xl sm:text-6xl lg:text-6xl text-center tracking-tighter font-[700]
-                px-8 py-2 rounded-2xl lg:[word-spacing:-1.5px] text-black dark:text-white">
+                <h1 className="text-4xl sm:text-6xl lg:text-6xl text-center tracking-tighter font-[700]
+                px-12 py-2 rounded-2xl lg:[word-spacing:-1.5px] text-black dark:text-white">
                     Build your web apps with ease
                 </h1>
             </div>
@@ -18,10 +18,10 @@ export default function Hero() {
             </div>
 
             <div className="flex items-center justify-center gap-5 z-50">
-                <button className="py-2 px-4 dark:bg-white bg-black text-white dark:text-black text-sm md:text-base rounded-xl hover:bg-black/90 dark:hover:bg-white/90">
+                <button className="py-2 px-4 dark:bg-white bg-black text-white dark:text-black text-xs sm:text-sm md:text-base rounded-xl hover:bg-black/90 dark:hover:bg-white/90">
                     Star on Github🎉
                 </button>
-                <button className="px-4 py-2 rounded-xl flex items-center dark:hover:bg-neutral-900 z-50
+                <button className="px-4 py-2 rounded-xl flex items-center dark:hover:bg-neutral-900 z-50 text-xs sm:text-sm md:text-base 
 			    bg-white dark:bg-neutral-950 dark:border-neutral-900 border-neutral-100 border-2 group hover:bg-neutral-100 ">
                     Get Started 🚀
                 </button>
