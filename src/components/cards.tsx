@@ -1,8 +1,8 @@
 'use client';
 import clsx from 'clsx';
 import { motion, useMotionTemplate, useMotionValue, type MotionStyle, type MotionValue } from 'framer-motion';
+import { cardVariants } from '../framerVars';
 import { HTMLProps, type MouseEvent } from 'react';
-// import { useIsMobile } from '../hooks/useIsMobile';
 
 type WrapperStyle = MotionStyle & {
     '--x': MotionValue<string>;
@@ -13,10 +13,8 @@ export function FeatureCard({ children, className }: { children?: React.ReactNod
 
     const mouseX = useMotionValue(0);
     const mouseY = useMotionValue(0);
-    // const isMobile = useIsMobile();
 
     function handleMouseMove({ currentTarget, clientX, clientY }: MouseEvent) {
-        // if (isMobile) return;
         const { left, top } = currentTarget.getBoundingClientRect();
         mouseX.set(clientX - left);
         mouseY.set(clientY - top);
@@ -26,6 +24,10 @@ export function FeatureCard({ children, className }: { children?: React.ReactNod
         <motion.div
             className={clsx("animated-feature-cards relative drop-shadow-[0_0_15px_rgba(49,49,49,0.2)]",className)}
             onMouseMove={handleMouseMove}
+            variants={cardVariants}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
             style={
                 {
                     '--x': useMotionTemplate`${mouseX}px`,
