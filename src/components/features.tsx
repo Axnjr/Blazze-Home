@@ -1,5 +1,7 @@
+import { Variants } from 'framer-motion';
 import { FeatureCard } from './cards'
-import DogeSmile from "/doge.webp"
+// import DogeSmile from "/doge.webp"
+
 
 const features = [
     { name: "Routing", description: "Keep the logic separated without any setup. Routes are based on the directory structure." },
@@ -53,12 +55,12 @@ export default function Features() {
                             {
                                 features.map((f, id) => {
                                     return <FeatureCard key={id} className='w-[100%] h-fit hover:shadow-2xl shadow-blue-500'>
-                                        <div className='group w-full h-52 md:h-44 p-8 rounded-xl flex 
+                                        <div className='group w-full h-52 md:h-44 md:p-8 rounded-xl flex 
 											flex-col items-start justify-center text-left gap-2'>
-                                            <h1 className='tracking-tighter font-[700] text-2xl lg:text-3xl m-4 flex items-center bg-gradient-to-r
+                                            <h1 className='tracking-tighter font-[700] group-hover:font-black text-xl sm:text-2xl lg:text-3xl m-4 flex items-center bg-gradient-to-r
                                             from-blue-500 to-fuchsia-500 bg-clip-text group-hover:text-transparent gap-1'>
                                                 <span className='rounded-full w-10 text-base mx-2 h-10 flex items-center justify-center p-2
-                                                bg-blue-500/40 text-blue-500 group-hover:bg-white group-hover:text-black'>
+                                                bg-black text-white dark:bg-white dark:text-black '>
                                                     {id + 1}
                                                 </span>
                                                 {f.name}
