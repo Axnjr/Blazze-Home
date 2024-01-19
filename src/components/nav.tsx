@@ -26,8 +26,9 @@ export default function Navigation() {
         <nav className="absolute z-50 top-0 left-0 w-full h-fit py-4 px-6 text-right flex items-center justify-between 
 			border-b dark:border-neutral-800 border-neutral-200">
             <h1 className="text-2xl font-bold tracking-tighter cursor-copy">
-                <span className="text-2xl mt-6">🏎️</span>
-				&nbsp;Blazze<span className="para text-[0.7rem]">. JS</span>
+				&nbsp;Blazze
+				<span className="para text-[0.7rem]">. JS</span>
+                {/* <span className="text-2xl ">🏎️</span> */}
             </h1>
             <div className="flex items-center gap-4">
                 <Links />
