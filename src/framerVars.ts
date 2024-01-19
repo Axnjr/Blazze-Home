@@ -12,7 +12,7 @@ export const cardVariants: Variants = {
         transition: {
             type: "spring",
             bounce: 0.2,
-            duration: 0.5
+            duration: 1
         }
     }
 };
