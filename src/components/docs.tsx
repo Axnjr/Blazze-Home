@@ -38,7 +38,7 @@ export default function Docs() {
                         sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
                     ></iframe>
                 </div>
-                <a href="https://codesandbox.io/p/devbox/blazze-js-app-3fvzgj?embed=1&file=%2Fapi%2Fv1%2Fusers%2FGET.ts&showConsole=true">
+                <a className="block md:hidden" href="https://codesandbox.io/p/devbox/blazze-js-app-3fvzgj?embed=1&file=%2Fapi%2Fv1%2Fusers%2FGET.ts&showConsole=true">
                     <img alt="Edit Blazze.js App" src="https://codesandbox.io/static/img/play-codesandbox.svg"/>
                 </a>
             </div>
