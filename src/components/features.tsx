@@ -1,7 +1,4 @@
-import { Variants } from 'framer-motion';
 import { FeatureCard } from './cards'
-// import DogeSmile from "/doge.webp"
-
 
 const features = [
     { name: "Routing", description: "Keep the logic separated without any setup. Routes are based on the directory structure." },
